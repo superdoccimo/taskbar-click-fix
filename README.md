@@ -13,6 +13,7 @@ Windows 11 taskbar click fix tool (MVP).
 - `docs/windows-test-plan.md` — Windows real-machine test plan
 - `docs/quickstart-ja.md` — Japanese quickstart for real-machine testing
 - `docs/test-result-template.md` — template for reporting Windows real-machine results
+- `docs/telegram-test-reply-template-ja.md` — Japanese reply template for sending test results back over Telegram
 - `ahk/taskbar_click_logger.ahk` — AutoHotkey v2 observation logger MVP
 - `ahk/taskbar_click_fix_mvp.ahk` — AutoHotkey v2 correction MVP
 
