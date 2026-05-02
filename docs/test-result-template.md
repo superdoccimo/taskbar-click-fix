@@ -15,6 +15,11 @@
 - Visible failures:
 - Notes:
 
+### Analyzer output
+```text
+paste output from: python scripts/analyze_taskbar_log.py taskbar_click_log.csv
+```
+
 ### Sample CSV rows
 ```csv
 paste here

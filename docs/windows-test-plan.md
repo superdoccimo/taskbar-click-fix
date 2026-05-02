@@ -18,7 +18,8 @@ Validate whether short taskbar clicks fail because the button-up happens too qui
    - different app switch
    - same-app multi-window switch from taskbar thumbnails
 4. Save `taskbar_click_log.csv`
-5. Mark which attempts visibly failed
+5. Run `python scripts/analyze_taskbar_log.py taskbar_click_log.csv` if Python is available
+6. Mark which attempts visibly failed
 
 ## Phase 2: correction
 1. Stop logger script
@@ -40,6 +41,15 @@ If correction helps but feels weak:
 
 If correction feels sticky or annoying:
 - lower `MIN_HOLD_MS` from 40 to 30
+
+## Log summary helper
+Run this from the repository root after the observation pass:
+
+```powershell
+python scripts/analyze_taskbar_log.py taskbar_click_log.csv
+```
+
+It summarizes click duration, pointer movement, root window classes, and very short click samples.
 
 ## Next implementation targets after test
 - exclude Start button / tray / notification area

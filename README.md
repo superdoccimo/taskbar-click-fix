@@ -16,6 +16,7 @@ Windows 11 taskbar click fix tool (MVP).
 - `docs/telegram-test-reply-template-ja.md` — Japanese reply template for sending test results back over Telegram
 - `ahk/taskbar_click_logger.ahk` — AutoHotkey v2 observation logger MVP
 - `ahk/taskbar_click_fix_mvp.ahk` — AutoHotkey v2 correction MVP
+- `scripts/analyze_taskbar_log.py` — small CSV summary helper for observation logs
 
 ## Observation MVP
 `ahk/taskbar_click_logger.ahk` records:
@@ -45,6 +46,7 @@ Current default:
    - Correction MVP: `ahk/taskbar_click_fix_mvp.ahk`
 4. Reproduce the taskbar click issue
 5. If using the logger, inspect `taskbar_click_log.csv`
+6. Optional: summarize the CSV with `python scripts/analyze_taskbar_log.py taskbar_click_log.csv`
 
 ## Real-machine test checklist
 ### Observation pass
@@ -72,6 +74,7 @@ Current default:
 - whether taskbar tools like Windhawk / ExplorerPatcher are installed
 - whether another mouse reproduces the issue
 - sample CSV rows from the observation pass
+- output from `python scripts/analyze_taskbar_log.py taskbar_click_log.csv`
 - whether `MIN_HOLD_MS = 40` feels too small / too large
 
 ## Known limitations
